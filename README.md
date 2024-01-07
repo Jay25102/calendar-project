@@ -1,4 +1,3 @@
 Personal project.
 
-# Heading level 1
-Version 0.5
+# Heading level 1 Version 0.5
