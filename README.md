@@ -6,6 +6,7 @@ Personal project that generates a calendar
 - Unorganized code
 - Needs refactoring and more efficient time complexity
 - No CSS currently
+- Time does not update if the day transitions, only on refresh
 
 ## Todo
 - Refactoring
