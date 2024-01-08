@@ -9,7 +9,7 @@ Personal project that generates a calendar
 
 ## Todo
 - Refactoring
-- Organize the Frankensteins monster function into multiple functions
+- ~~Organize the Frankensteins monster function into multiple functions~~
 - Basic CSS
 - Allow the user to click on a date to add notes/events
 - Save those events in the browser
