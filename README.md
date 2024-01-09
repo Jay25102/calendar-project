@@ -15,3 +15,4 @@ Personal project that generates a calendar
 - Allow the user to click on a date to add notes/events
 - Save those events in the browser
 - ~~Highlight current day~~
+- documentation
