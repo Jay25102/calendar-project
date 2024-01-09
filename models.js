@@ -2,6 +2,8 @@
  * A calendar class that handles the array representation of the calendar so that the dom may be easier to manipulate
  * 
  * What do I make an object?
+ * Should I split this into multiple objects?
+ * 
  */
 class CalendarArr {
     constructor() {
@@ -35,15 +37,16 @@ class CalendarArr {
                 calendarTable.appendChild(newTr);
             }
             let newTd = document.createElement("td");
-            newTd.classList.add("calendar-day");
             if (i == this.todaysDate) {
                 newTd.id = "todays-date";
             }
             if (this.calendarTableArr[i] != -1) {
+                newTd.classList.add("calendar-day");
                 newTd.innerText = this.calendarTableArr[i];
+                newTd.classList.add(`${MONTHS[new Date().getMonth()]}`);
             }
             calendarTable.lastChild.appendChild(newTd);
         }
     }
-
 }
+

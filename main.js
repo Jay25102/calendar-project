@@ -1,5 +1,5 @@
 // constants
-const CAL_ROWS = 6;
+const CAL_ROWS = 5;
 const CAL_COLS = 7;
 const WEEK_DAYS = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
