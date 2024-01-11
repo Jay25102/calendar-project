@@ -42,11 +42,26 @@ class CalendarArr {
             }
             if (this.calendarTableArr[i] != -1) {
                 newTd.classList.add("calendar-day");
+                newTd.classList.add(i);
                 newTd.innerText = this.calendarTableArr[i];
                 newTd.classList.add(`${MONTHS[new Date().getMonth()]}`);
             }
             calendarTable.lastChild.appendChild(newTd);
         }
+    }
+}
+
+class ToDoList {
+    constructor() {
+        this.globalList = {
+            1: ["feed cats", "go for walk", "eat dinner"],
+            2: ["item1", "item2", "item3"]
+        }
+    }
+
+    // return in string format
+    getGlobalList() {
+        return this.globalList["everyday"];
     }
 }
 
