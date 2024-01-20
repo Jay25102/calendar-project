@@ -1,3 +1,6 @@
+/**
+ * parses the user's clicks to add/remove todo list items
+ */
 document.addEventListener("click", function(e) {
     if (e.target.classList.contains("remove-todo")) {
         e.target.parentElement.remove();
@@ -13,6 +16,7 @@ document.addEventListener("click", function(e) {
 
         // export this todo list stuff to a new function
         let toDoList = new ToDoList();
+        toDoList.generateList();
         if (toDoList.globalList[e.target.classList[1]]) {
             let newUl = document.createElement("ul");
             // new item form
@@ -47,7 +51,15 @@ document.addEventListener("click", function(e) {
 
 });
 
+/**
+ * adds a new item to the todo list
+ */
 document.addEventListener("submit", function(e) {
     e.preventDefault();
-    console.log(e.target.firstElementChild.value);
+    // console.log(e.target.firstElementChild.value);
+    // console.log(e.target.parentElement.newUl);
+    let newLi = document.createElement("li");
+    newLi.innerText = e.target.firstElementChild.value;
+    e.target.firstElementChild.value = "";
+    e.target.parentElement.querySelector("ul").appendChild(newLi);
 });

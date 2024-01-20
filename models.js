@@ -51,17 +51,25 @@ class CalendarArr {
     }
 }
 
+/**
+ * class for the todo list on each calendar day
+ */
 class ToDoList {
     constructor() {
         this.globalList = {
-            1: ["feed cats", "go for walk", "eat dinner"],
-            2: ["item1", "item2", "item3"]
+            // 1: ["feed cats", "go for walk", "eat dinner"],
+            // 2: ["item1", "item2", "item3"]
         }
     }
 
-    // return in string format
-    getGlobalList() {
-        return this.globalList["everyday"];
+    /**
+     * generate empty lists for each of the calendar days
+     */
+    generateList() {
+        for (let i = 1; i <= calendarArr.calendarTableArr.length; i++) {
+            // this.globalList[i] = ["testing", "testing2"];
+            this.globalList[i] = [];
+        }
     }
 }
 

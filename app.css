@@ -1,13 +1,44 @@
-#calendar-table {
-    width: 100vw;
-    height: 100vh;
+#nav-logo {
+    font-size: 16px;
+}
+
+#nav-time {
+    font-size: 48px;
+    margin: 15px;
+}
+
+#weekday-table td {
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    color: grey;
+}
+
+#weekday-table {
+    width: 95vw;
     border-collapse: collapse;
+    table-layout: fixed;
+    margin: auto;
+}
+
+#calendar-table {
+    width: 95vw;
+    margin: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#calendar-table tr {
+    height: 200px;
 }
 
 #todays-date {
     color: red;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 td {
     border: 1px solid gray;
 }
+

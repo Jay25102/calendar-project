@@ -1,5 +1,6 @@
 let calendarTableArr;
 let todaysDate = new Date();
+let calendarArr;
 
 /**
  * create a table at the top displaying the days of the week
@@ -18,8 +19,8 @@ function createWeekdayHeader() {
  */
 function createCalendarTable() {
     console.debug("createCalendarTable");
-
-    let calendarArr = new CalendarArr();
+    
+    calendarArr = new CalendarArr();
     calendarArr.generateCells();
     calendarArr.generateDomCalendar();
 
